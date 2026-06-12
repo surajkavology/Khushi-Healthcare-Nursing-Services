@@ -6656,6 +6656,7 @@ header.main-header .header-sticky.active{
 
 	.about-us-image figure img{
         aspect-ratio: 1 / 1.161;
+		width: 100%;
     }
 
 	.about-review-box{
