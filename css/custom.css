@@ -6630,6 +6630,7 @@ header.main-header .header-sticky.active{
 
 	.about-image-title h2{
 		font-size: 50px;
+		display: none;
 	}
 
 	.satisfy-client-image figure img{
@@ -6650,8 +6651,8 @@ header.main-header .header-sticky.active{
 	}
 
 	.about-image-box-1{
-		width: calc(100% - 42px);
-		margin-left: -8px;
+		width:100%;
+		margin:0;
 	}
 
 	.about-us-image figure img{
