@@ -2025,6 +2025,7 @@ header.main-header .header-sticky.active{
 
 .our-team{
 	padding: 120px 0;
+	display: none;
 }
 
 .team-item{
@@ -2185,6 +2186,7 @@ header.main-header .header-sticky.active{
 
 .our-pricing{
 	padding: 120px 0;
+	display: none;
 }
 
 .pricing-item{
