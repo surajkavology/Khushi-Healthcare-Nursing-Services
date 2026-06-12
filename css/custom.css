@@ -1881,6 +1881,7 @@ header.main-header .header-sticky.active{
 
 .our-partners{
 	padding: 120px 0;
+	display: none;
 }
 
 .our-partners-list{
@@ -2843,6 +2844,7 @@ header.main-header .header-sticky.active{
 
 .our-blog{
 	padding: 120px 0 90px;
+	display: none;
 }
 
 .post-item{
