@@ -128,7 +128,13 @@
 
 	/* Init Counter */
 	if ($('.counter').length) {
-		$('.counter').counterUp({ delay: 6, time: 3000 });
+		$('.counter').each(function() {
+			var num = parseFloat($(this).text());
+			if (!isNaN(num)) {
+				$(this).text(num);
+			}
+		});
+		$('.counter').counterUp({ delay: 6, time: 1000 });
 	}
 
 	/* Image Reveal Animation */
