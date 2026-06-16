@@ -909,12 +909,12 @@ header.main-header .header-sticky.active {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  border-radius: 30px;
+  border-radius:0;
   height: auto;
   min-height: 100vh;
   align-content: center;
   padding: 230px 0 120px;
-  margin: 15px 15px 0;
+  margin:0;
   overflow: hidden;
 }
 
@@ -925,7 +925,7 @@ header.main-header .header-sticky.active {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 30px;
+  border-radius:0;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -937,6 +937,7 @@ header.main-header .header-sticky.active {
       rgba(32, 130, 76, 0.63) 58.83%,
       rgb(32 130 76 / 60%) 100%
     );
+      background: #0000008a;
 }
 
 .hero .container {
@@ -951,13 +952,16 @@ header.main-header .header-sticky.active {
 .hero-content-body {
   display: flex;
   flex-wrap: wrap;
-  align-items:start;
+  align-items:center;
   gap: 20px 40px;
   border-top: 1px solid var(--dark-divider-color);
   padding-top: 40px;
   margin-top: 100px;
 }
 
+.hero .btn-hero-outline {
+    color: #fff;
+}
 /* ======================================
    PREMIUM HERO BANNER
    ====================================== */
@@ -1132,6 +1136,7 @@ header.main-header .header-sticky.active {
 .btn-hero-outline:hover {
   color: var(--accent-color);
 }
+
 
 .btn-play-icon {
   display: flex;
@@ -3573,9 +3578,9 @@ header.main-header .header-sticky.active {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 30px;
+  border-radius:0;
   padding: 285px 0 175px;
-  margin: 15px 15px 0;
+  margin:0;
   overflow: hidden;
 }
 
@@ -3596,8 +3601,9 @@ header.main-header .header-sticky.active {
       rgba(32, 130, 76, 0.63) 58.83%,
       rgb(32 130 76 / 60%) 100%
     );
-  border-radius: 30px;
+  border-radius:0;
   z-index: 1;
+  background: #0000008a;
 }
 
 .page-header-box {
@@ -3637,6 +3643,9 @@ header.main-header .header-sticky.active {
   color: var(--white-color);
 }
 
+.page-header-box p {
+    color: #fff;
+}
 /* ============================================
    PREMIUM PAGE BANNER v2 — Reference Matched
    ============================================ */
@@ -3960,6 +3969,57 @@ header.main-header .header-sticky.active {
   z-index: 1;
 }
 
+
+.contact-fixed-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: end;
+    transform: translateY(-50%);
+}
+.contact-fixed-bar a {
+    width: 70px;
+    height: 70px;
+    background:var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+    position: relative;
+    cursor: pointer;
+}
+.contact-fixed-bar a span {
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.3s linear;
+    position: absolute;
+    right: 0;
+    white-space: nowrap;
+    top: 50%;
+    transform: translate(100%, -50%);
+    background:var(--accent-color);
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 24px;
+}
+
+.contact-fixed-bar a:hover span {
+    transform: translate(-60px, -50%);
+}
+.contact-fixed-bar a:hover {
+    background:var(--accent-color);
+}
+
+.mobile-banner{
+  display: none;
+}
 /* ============================================
    RESPONSIVE — Premium Page Banner v2
    ============================================ */
@@ -4013,6 +4073,14 @@ header.main-header .header-sticky.active {
   .pb-visual--collage { min-height: 200px; }
   .pb-illus-wrap { width: 150px; height: 150px; }
   .pb-illus-icon { font-size: 55px; }
+
+
+  .desktop-banner {
+    display: none;
+  }
+  .mobile-banner {
+    display: block;
+  }
 }
 
 .our-approach {
@@ -13512,5 +13580,20 @@ header.main-header .header-sticky.active {
 @media screen and (max-width: 575px) {
   .services-grid {
     grid-template-columns: 100%;
+  }
+
+  .contact-fixed-bar a {
+    width: 50px;
+    height: 50px;
+  }
+  .contact-fixed-bar a svg {
+    width: 20px;
+    height: 20px;
+  }
+  .contact-fixed-bar a:hover span {
+    transform: translate(-40px, -50%);
+  }
+  .contact-fixed-bar a span {
+    font-size: 14px;
   }
 }
