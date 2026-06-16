@@ -962,6 +962,9 @@ header.main-header .header-sticky.active {
 .hero .btn-hero-outline {
     color: #fff;
 }
+.hero .btn-hero-outline:hover {
+    color: #fff;
+}
 /* ======================================
    PREMIUM HERO BANNER
    ====================================== */
