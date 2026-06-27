@@ -3594,7 +3594,7 @@ header.main-header .header-sticky.active {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius:0;
-  padding: 285px 0 175px;
+  padding: 175px 0 175px;
   margin:0;
   overflow: hidden;
 }
